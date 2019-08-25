@@ -1,0 +1,21 @@
+package javapakage;
+
+import java.util.Scanner;
+
+public class formula
+{
+
+	public static void main(String[] args)
+	{
+		int r,h;
+		double ans;
+		System.out.println("Enter rad and hei:");
+		Scanner sc=new Scanner(System.in);
+		r=sc.nextInt();
+		h=sc.nextInt();
+		ans=2*3.14*r*r*h;
+		System.out.println("The ans is:"+ans); 
+		sc.close();
+	}
+   
+}

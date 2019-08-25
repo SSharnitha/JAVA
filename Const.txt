@@ -1,0 +1,30 @@
+package javapakage;
+
+import java.util.Scanner;
+
+public class Const 
+{
+	int l,h;
+	Const(String na,String col)
+	{
+		l=4;
+		h=2;
+		specPrint(na,col);
+	}
+	public void specPrint(String na,String col)
+	{
+		System.out.println("The speciphications are:");
+		System.out.println(l+"  "+h+"  "+na+"  "+col);	
+	}
+	public static void main(String[] args) 
+	{
+		String na,col;
+		System.out.println("enter the name and colour:");
+		Scanner sc=new Scanner(System.in);
+		na=sc.next();
+		col=sc.next();
+		new Const(na,col);
+		sc.close();
+	}
+	
+}

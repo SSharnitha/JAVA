@@ -1,0 +1,21 @@
+package javapakage;
+
+import java.util.Scanner;
+public class Number 
+{
+	public static void main(String[] args)
+	{
+		int num,sq,cu;
+		double sqr;
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter the num:");
+		num=obj.nextInt();
+		sq=num*num;
+		cu=num*num*num;
+		sqr=Math.sqrt(num);
+		System.out.println("the square is:"+sq);
+		System.out.println("The cube is:"+cu);
+		System.out.println("The sqrt is:"+sqr);
+		obj.close();
+	}
+}

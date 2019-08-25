@@ -1,0 +1,25 @@
+package javapakage;
+import java.util.Scanner;
+public class Patern1 
+{
+
+	public static void main(String[] args) 
+	{
+		int i=1,ch=0;
+		Scanner obj=new Scanner(System.in);
+		for(;ch==0;)
+		{
+			for(int k=1;k<=20;k++)
+			{
+				for(int j=i;j<=i+2;j++)
+					System.out.print(k+"*"+j+"="+k*j+"\t\t");
+					System.out.println("\n");
+			}
+			i+=3;
+			System.out.println("Do u wat to continue(0/1):");
+			ch=obj.nextInt();
+		}
+		obj.close();
+	}
+
+}

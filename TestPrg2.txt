@@ -1,0 +1,37 @@
+package javapakage;
+
+import java.util.Scanner;
+
+public class TestPrg2
+{
+
+	public static void main(String[] args)
+	{
+		String s;
+		char[] a=new char[5];
+		int sum=0;
+		a[0]='a';
+		a[1]='e';
+		a[2]='i';
+		a[3]='o';
+		a[4]='u';
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string:");
+		s=sc.next();
+		
+		for(int i=0;i<s.length();i++)
+		{
+			for(int j=0;j<a.length;j++)
+			{
+				if(s.charAt(i)==a[j])
+				{
+					sum++;
+					break;
+				}
+			}
+		}
+		
+		System.out.println("The sum of vowel charec:"+sum);
+		sc.close();
+	}
+}

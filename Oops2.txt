@@ -1,0 +1,18 @@
+package javapakage;
+import java.util.Scanner;
+public class Oops2
+{
+	int a,b,c;
+	public static void main(String[] args)
+	{
+		Oops2 sc;
+		sc=new Oops2();
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the value of a and b:");
+		sc.a=obj.nextInt();
+		sc.b=obj.nextInt();
+		sc.c=sc.a+sc.b;
+		System.out.println(sc.c);
+		obj.close();
+	}
+}

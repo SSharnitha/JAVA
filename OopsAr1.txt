@@ -1,0 +1,39 @@
+package javapakage;
+
+import java.util.Scanner;
+
+public class OopsAr1
+{
+	int a,b,c;
+	public static void main(String[] args)
+	{
+		OopsAr1[] sc=new OopsAr1[3];
+		sc[0]=new OopsAr1();
+		sc[1]=new OopsAr1();
+		sc[2]=new OopsAr1();
+		
+		Scanner obj=new Scanner(System.in);
+		//For the obj sc[0]
+		System.out.println("Enter the value of a and b:");
+		sc[0].a=obj.nextInt();
+		sc[0].b=obj.nextInt();
+		
+		sc[0].c=sc[0].a+sc[0].b;
+		System.out.println(sc[0].c);
+		
+		//For the obj sc[1]
+		System.out.println("Enter the value of a and b:");
+		sc[1].a=obj.nextInt();
+		sc[1].b=obj.nextInt();
+		
+		sc[1].c=sc[1].a+sc[1].b;
+		System.out.println(sc[1].c);
+		
+		//For the obj sc[2] no values are given for it as a,b,c r global it has default
+		//value which is 0 so prints 0
+				System.out.println("The values are");
+				System.out.println(sc[2].a+"        "+sc[2].b+"        "+sc[2].c);
+				obj.close();
+	}
+
+}

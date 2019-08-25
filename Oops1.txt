@@ -1,0 +1,16 @@
+package javapakage;
+
+public class Oops1 
+{
+	int a,b,c;
+	public static void main(String[] args) 
+	{
+		Oops1 sc=new Oops1();
+		sc.a=10;
+		sc.b=20;
+		sc.c=sc.a+sc.b;
+		System.out.println(sc.c);
+	
+	}
+
+}

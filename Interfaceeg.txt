@@ -1,0 +1,21 @@
+package javapakage;
+abstract class Adding
+{
+	int a=5,b=4;
+	void add() {}
+}
+public class Interfaceeg extends Adding
+{
+    public void add ()
+	{
+		System.out.println(a+b);
+	}
+	
+	public static void main(String[] args)
+	{
+		Interfaceeg obj=new Interfaceeg();
+		obj.add();
+	}
+
+}
+

@@ -1,0 +1,39 @@
+package javapakage;
+
+import java.util.Scanner;
+
+public class Const1
+{
+	int prc,sc1,sc2,r,rs;
+	
+	Const1(String na,String col)
+	{
+		prc=16;
+		sc1=16;
+		sc2=8;
+		r=4;
+		rs=20000;
+		specPrint(na,col);
+	}
+	public void specPrint(String na,String col)
+	{
+		System.out.println("Customer:"+na);
+		System.out.println("Primary Camera:"+prc);
+		System.out.println("Secondary Camera:"+sc1+"  "+sc2);
+		System.out.println("Ram:"+r);
+		System.out.println("Rs:"+rs);
+	}
+	
+	public static void main(String[] args) 
+	{
+		String na,col;
+		System.out.println("enter the name and colour:");
+		Scanner sc=new Scanner(System.in);
+		na=sc.next();
+		col=sc.next();
+		new Const1(na,col);
+		sc.close();
+	}
+	
+
+}

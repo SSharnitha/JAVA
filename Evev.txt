@@ -1,0 +1,17 @@
+package javapakage;
+
+public class Evev 
+{
+
+	public static void main(String[] args)
+	{
+		int i,sum=0;
+		System.out.println("The sum of eve nos are:");
+		for(i=10;i<=60;i++)
+		{
+			if(i%2==0)
+				sum+=i;
+		}
+		System.out.println(sum);
+	}
+}

@@ -1,0 +1,27 @@
+package javapakage;
+
+import java.util.Scanner;
+public class Salary {
+
+	public static void main(String[] args) 
+	{
+		int bs,da,cca,hra,ea,pf,lip,gs,td,ns;
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the basic salary:");
+		bs=obj.nextInt();
+		da=bs*57/100;
+		cca=bs*1/5;
+		hra=bs*5/100;
+		ea=100;
+		pf=bs*8/100;
+		lip=150;
+		gs=bs+(da+cca+hra+ea);
+		td=pf+lip;
+		ns=gs-td;
+		System.out.println("The gross salary is:"+gs);
+		System.out.println("The total deduction is:"+td);
+		System.out.println("The net salary is:"+ns);
+		obj.close();
+    }
+
+}

@@ -1,0 +1,24 @@
+package javapakage;
+
+import java.util.Scanner;
+public class Mark
+{
+
+	public static void main(String[] args) 
+	{
+		double avg;
+		int tot=0,i;
+		int a[]=new int[5];
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter the marks:");
+		for(i=0;i<5;i++)
+			a[i]=obj.nextInt();
+		for(i=0;i<5;i++)
+			tot+=a[i];
+		avg=tot/5;
+		System.out.println("The total is:"+tot);
+		System.out.println("The avg is:"+avg);
+		obj.close();
+	}
+
+}
